@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -37,9 +38,10 @@ topnav a.active {
 
 <div class="topnav">
   <a class="active" href="index.php">Home</a>
-  <a href="#news">News</a>
+  <a href="news.php">News</a>
   <a href="contacts.php">Contacts</a>
-  <a href="#about">About</a>
+  <a href="products.php">Products</a>
+  <a href="about.php">About</a>
 </div>
 
 <p>Let Us Help you live a better life!</p>
@@ -58,5 +60,4 @@ topnav a.active {
 ?>
 </body>
 </html>
-
 
