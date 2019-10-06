@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -38,11 +36,23 @@ topnav a.active {
 <h1>SmartHome</h1>
 
 <div class="topnav">
-  <a class="active" href="#home">Home</a>
+  <a class="active" href="index.php">Home</a>
   <a href="#news">News</a>
   <a href="contacts.php">Contacts</a>
   <a href="#about">About</a>
 </div>
+
+<p>Let Us Help you live a better life!</p>
+
+
+
+
+
+
+
+
+
+
 
 <?php
 ?>
