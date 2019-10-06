@@ -13,13 +13,13 @@
 <h1>Contacts</h1>
 <?php
 
-<?php 
+ 
       $contacts = file('./contacts.txt');
       foreach ($contacts as $contact) {
         $contact_info = explode(',', $contact);
         echo "<h3>$contact_info[0]</h3><p>$contact_info[1]</p><p>$contact_info[2]</p><p>$contact_info[3]</p>
       }
-    ?>
+    
 ?>
 </body>
 </html>
