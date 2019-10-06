@@ -10,7 +10,7 @@
   
   while(! feof($fn))  {
 	$result = fgets($fn);
-	echo $result;
+	echo $result <br>;
   }
 
   fclose($fn);
