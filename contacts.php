@@ -5,9 +5,16 @@
 <body>
 <h1>Contacts</h1>
 <?php
-$myfile = fopen("272contacts.txt", "r") or die("Unable to open file!");
-echo fread($myfile,filesize("272contacts.txt"));
-fclose($myfile);
+
+  $fn = fopen("272contacts.txt","r");
+  
+  while(! feof($fn))  {
+	$result = fgets($fn);
+	echo $result;
+  }
+
+  fclose($fn);
+
 ?>
 </body>
 </html>
