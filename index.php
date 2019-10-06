@@ -11,7 +11,11 @@
 </div>
 <?php
 
+<<<<<<< HEAD
 
+=======
+echo "hello";
+>>>>>>> e4f3558b0bf3da505fc3b4af3a031e34e5bdf43d
 
 ?>
 </body>
