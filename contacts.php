@@ -6,7 +6,7 @@
 
 <?php
 
-echo "hello";
+echo "helo";
 
 ?>
 </body>
