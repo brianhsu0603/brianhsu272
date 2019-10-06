@@ -12,11 +12,11 @@
 </div>
 <h1>Contacts</h1>
 <?php
-$contacts = file('272contacts.txt');
-      foreach ($contacts as $contact) {
-        $contact_info = explode(',', $contact);
-        echo "<h3>$contact_info[0]</h3><p>$contact_info[1]</p><p>$contact_info[2]</p><p>$contact_info[3]</p>"
-      }
+$fn = fopen("272contacts.txt","r") or die("fail to open file");
+  while($row = fgets($fn)){
+    echo"<p>".$row."</p>";
+  }
+  fclose($fn);
     
 ?>
 </body>
