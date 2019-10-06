@@ -1,0 +1,10 @@
+Name              Job Title       Email                    Phone
+
+Brian Hsu         CEO             brian.hsu@sjsu.edu       0123456789
+
+Jade Hsu          CIO             jade.hsu@sjsu.edu.       1123456789
+
+Ashley Hsu        CDO             ashley.hsu@sjsu.edu      2123456789
+
+Andy Lu           CTO             Andy.lu@sjsu.edu         3123456789
+
