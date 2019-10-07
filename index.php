@@ -38,7 +38,7 @@ topnav a.active {
 
 <div class="topnav">
   <a class="active" href="index.php">Home</a>
-  <a href="login.php">Login</a>
+  <a href="passwords.html">Login</a>
   <a href="news.php">News</a>
   <a href="contacts.php">Contacts</a>
   <a href="products.php">Products</a>
