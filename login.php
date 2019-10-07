@@ -1,3 +1,5 @@
+
+
 <?php
    include("config.php");
    session_start();
@@ -5,8 +7,8 @@
    if($_SERVER["REQUEST_METHOD"] == "POST") {
       // username and password sent from form 
       
-      $myusername = "brianhsu";
-      $mypassword = "0000";
+      $myusername = mysqli_real_escape_string($db,$_POST['username']);
+      $mypassword = mysqli_real_escape_string($db,$_POST['password']); 
       
       $sql = "SELECT id FROM admin WHERE username = '$myusername' and passcode = '$mypassword'";
       $result = mysqli_query($db,$sql);
@@ -73,4 +75,3 @@
 
    </body>
 </html>
-
