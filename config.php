@@ -1,5 +1,5 @@
 <?php
-   define('DB_SERVER', 'localhost:3036');
+   define('DB_SERVER', 'database.frm');
    define('DB_USERNAME', 'brianhsu');
    define('DB_PASSWORD', '0000');
    define('DB_DATABASE', 'users');
