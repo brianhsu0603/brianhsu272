@@ -5,8 +5,8 @@
    if($_SERVER["REQUEST_METHOD"] == "POST") {
       // username and password sent from form 
       
-      $myusername = mysqli_real_escape_string($db,$_POST['brianhsu']);
-      $mypassword = mysqli_real_escape_string($db,$_POST['0000']); 
+      $myusername = "brianhsu";
+      $mypassword = "0000";
       
       $sql = "SELECT id FROM admin WHERE username = '$myusername' and passcode = '$mypassword'";
       $result = mysqli_query($db,$sql);
