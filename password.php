@@ -4,6 +4,59 @@
 <html xmlns = "http://www.w3.org/1999/xhtml">
 <head>
     <?php
+    
+     function checkPassword($userpassword, $filedata)
+      {
+          if ($userpassword == $filedata[1])
+           return true;
+          else  
+           return false;
+      }
+
+      function userAdded($name)
+      {
+          echo("<title>Thank You</title></head>
+          <body style = \"font-family:arial;font-size: 1em; color: blue\">
+          <strong>You have been added to the user list, $name.<br />Enjoy the site. </strong>");
+      }
+      
+      function accessGranted($name)
+      {
+        echo("<title>Thank You</title></head>
+        <body style = \"font-family:arial;
+        font-size: 1em; color: blue\">
+        <strong>Permission has been granted, $name.
+        <br />Enjoy the site. </strong>");
+      }
+
+      function wrongPassword()
+      {
+          print("<title>Access Denied</title></head>
+          <body style = \"font-family: arial;
+          font-size: 1em; color: red\">
+          <strong>You entered an invalid password.
+          <br />Access has been denied.</strong>");
+         }
+
+         function accessDenied()
+         {
+             print("<title>Access Denied</title></head>
+             <body style = \"font-family: arial;
+             font-size: 1em; color: red\">
+             <strong>
+             You were denied access to this server.
+             <br /></strong>");
+            }
+
+            function fieldsBlank()
+            {
+                print("<title>Access Denied</title></head>
+                <body style = \"font-family: arial;
+                font-size: 1em; color: red\">
+                <strong>
+                Please fill in all form fields.
+                <br /></strong>");
+               }
          
     
      
@@ -18,7 +71,7 @@
        if (isset($NewUser)){
 
          if(!($file = fopen("password.txt","a"))){
-             echo("<title>Error</title></head><body>
+             print("<title>Error</title></head><body>
              Could not open password file</body></html>");
              die();
          }
@@ -27,7 +80,7 @@
         }
        else{
           if(!($file = fopen("password.txt","r"))){
-              echo("<title>Error</title></head><body>Could not open password file</body></html>");
+              print("<title>Error</title></head><body>Could not open password file</body></html>");
               die();
           }
           $userVerified = 0;
@@ -54,58 +107,7 @@
       } 
     
     
- function checkPassword($userpassword, $filedata)
-      {
-          if ($userpassword == $filedata[1])
-           return true;
-          else  
-           return false;
-      }
 
-      function userAdded($name)
-      {
-          echo("<title>Thank You</title></head>
-          <body style = \"font-family:arial;font-size: 1em; color: blue\">
-          <strong>You have been added to the user list, $name.<br />Enjoy the site. </strong>");
-      }
-      
-      function accessGranted($name)
-      {
-        echo("<title>Thank You</title></head>
-        <body style = \"font-family:arial;
-        font-size: 1em; color: blue\">
-        <strong>Permission has been granted, $name.
-        <br />Enjoy the site. </strong>");
-      }
-
-      function wrongPassword()
-      {
-          echo("<title>Access Denied</title></head>
-          <body style = \"font-family: arial;
-          font-size: 1em; color: red\">
-          <strong>You entered an invalid password.
-          <br />Access has been denied.</strong>");
-         }
-
-         function accessDenied()
-         {
-             echo("<title>Access Denied</title></head>
-             <body style = \"font-family: arial;
-             font-size: 1em; color: red\">
-             <strong>
-             You were denied access to this server.
-             <br /></strong>");
-            }
-
-            function fieldsBlank()
-            {
-                echo("<title>Access Denied</title></head>
-                <body style = \"font-family: arial;
-                font-size: 1em; color: red\">
-                <strong>
-                Please fill in all form fields.
-                <br /></strong>");
-               }
     
 
 
