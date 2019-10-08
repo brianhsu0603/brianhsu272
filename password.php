@@ -27,12 +27,12 @@
         }
        else{
           if(!($file = fopen("password.txt","r"))){
-              echo("<title>Error</title></head><body>Could not open password file</body>");
+              echo("<title>Error</title></head><body>Could not open password file</body></html>");
               die();
           }
           $userVerified = 0;
 
-          while(!feof($file)&& !userVerified){
+          while(!feof($file && !$userVerified){
               $line = fgets($file, 255);
               $line = chop($line);
               $feild = split(",",$line,2);
@@ -50,7 +50,7 @@
           fclose($file);
 
           if(!$userVerfied)
-            acessDenied();
+            accessDenied();
       } 
     
     
