@@ -16,7 +16,7 @@
 
       function userAdded($name)
       {
-          print("<title>Thank You</title></head>
+          echo("<title>Thank You</title></head>
           <body style = \"font-family:arial;
           font-size: 1em; color: blue\">
           <strong>You have been added to the user list, $name.
@@ -25,7 +25,7 @@
       
       function accessGranted($name)
       {
-        print("<title>Thank You</title></head>
+        echo("<title>Thank You</title></head>
         <body style = \"font-family:arial;
         font-size: 1em; color: blue\">
         <strong>Permission has been granted, $name.
@@ -34,7 +34,7 @@
 
       function wrongPassword()
       {
-          print("<title>Access Denied</title></head>
+          echo("<title>Access Denied</title></head>
           <body style = \"font-family: arial;
           font-size: 1em; color: red\">
           <strong>You entered an invalid password.
@@ -43,7 +43,7 @@
 
          function accessDenied()
          {
-             print("<title>Access Denied</title></head>
+             echo("<title>Access Denied</title></head>
              <body style = \"font-family: arial;
              font-size: 1em; color: red\">
              <strong>
@@ -53,7 +53,7 @@
 
             function fieldsBlank()
             {
-                print("<title>Access Denied</title></head>
+                echo("<title>Access Denied</title></head>
                 <body style = \"font-family: arial;
                 font-size: 1em; color: red\">
                 <strong>
@@ -71,7 +71,7 @@
        if (isset($NewUser)){
 
          if(!($file = fopen("password.txt","a"))){
-             print("<title>Error</title></head><body>
+             echo("<title>Error</title></head><body>
              Could not open password file</body></html>");
              die();
          }
@@ -80,7 +80,7 @@
         }
       else{
           if(!($file = fopen("password.txt","r"))){
-              print("<title>Error</title></head><body>Could not open password file</body></html>");
+              echo("<title>Error</title></head><body>Could not open password file</body></html>");
               die();
           }
           $userVerified = 0;
