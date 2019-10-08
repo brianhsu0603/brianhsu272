@@ -19,13 +19,13 @@
 
          if(!($file = fopen("password.txt","a"))){
              echo("<title>Error</title></head><body>
-             Could not open password file</body>");
+             Could not open password file</body></html>");
              die();
          }
        fputs( $file, "$USERNAME,$PASSWORD\n");
        userAdded($USERNAME);
         }
-      else{
+       else{
           if(!($file = fopen("password.txt","r"))){
               echo("<title>Error</title></head><body>Could not open password file</body>");
               die();
