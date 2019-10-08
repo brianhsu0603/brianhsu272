@@ -2,8 +2,6 @@
 "http://www.w3.org/TR/xhtml11/DTD/xhtml1-transitional.dtd">
 
 <html xmlns = "http://www.w3.org/1999/xhtml">
-<head>
-</head>
 <body>
     <?php
          
