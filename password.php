@@ -2,7 +2,7 @@
 "http://www.w3.org/TR/xhtml11/DTD/xhtml1-transitional.dtd">
 
 <html xmlns = "http://www.w3.org/1999/xhtml">
-<body>
+
     <?php
          
     
@@ -16,14 +16,14 @@
 
       function userAdded($name)
       {
-          echo("<head><title>Thank You</title></head>
+          echo("<title>Thank You</title></head>
           <body style = \"font-family:arial;font-size: 1em; color: blue\">
           <strong>You have been added to the user list, $name.<br />Enjoy the site. </strong>");
       }
       
       function accessGranted($name)
       {
-        echo("<head><title>Thank You</title></head>
+        echo("<title>Thank You</title></head>
         <body style = \"font-family:arial;
         font-size: 1em; color: blue\">
         <strong>Permission has been granted, $name.
@@ -32,7 +32,7 @@
 
       function wrongPassword()
       {
-          echo("<head><title>Access Denied</title></head>
+          echo("<title>Access Denied</title></head>
           <body style = \"font-family: arial;
           font-size: 1em; color: red\">
           <strong>You entered an invalid password.
@@ -41,7 +41,7 @@
 
          function accessDenied()
          {
-             echo("<head><title>Access Denied</title></head>
+             echo("<title>Access Denied</title></head>
              <body style = \"font-family: arial;
              font-size: 1em; color: red\">
              <strong>
@@ -51,7 +51,7 @@
 
             function fieldsBlank()
             {
-                echo("<head><title>Access Denied</title></head>
+                echo("<title>Access Denied</title></head>
                 <body style = \"font-family: arial;
                 font-size: 1em; color: red\">
                 <strong>
@@ -69,7 +69,7 @@
        if (isset($NewUser)){
 
          if(!($file = fopen("password.txt","a"))){
-             echo("<head><title>Error</title></head><body>
+             echo("<title>Error</title></head><body>
              Could not open password file</body>");
              die();
          }
@@ -78,7 +78,7 @@
         }
       else{
           if(!($file = fopen("password.txt","r"))){
-              echo("<head><title>Error</title></head><body>Could not open password file</body>");
+              echo("<title>Error</title></head><body>Could not open password file</body>");
               die();
           }
           $userVerified = 0;
