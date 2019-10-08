@@ -16,7 +16,7 @@
          if(!($file = fopen("password.txt","a"))){
              print("<title>Error</title></head><body>
              Could not open password file</body></html>");
-             die()
+             die();
          }
        fputs( $file, "$USERNAME,$PASSWORD\n");
        userAdded($USERNAME);
