@@ -37,30 +37,36 @@
           while(!feof($file) && !$userVerified){
               $line = fgets($file, 255);
               $line = chop($line);
-              $feild = explode(",",$line);
+              $feild = explode(",",$line,2);
 
               if($USERNAME == $field[0]){
                   $userVerified = 1;
 
-                  if(checkPassword($PASSWORD, $field) == true)
-                  accessGranted($USERNAME);
-                  else
+                  if(checkPassword($PASSWORD, $field) == true){
+                    accessGranted($USERNAME);
+                  }
+                  else{
                     worngPassword();
+                  }
+                  
               }
           }
 
           fclose($file);
 
-          if(!$userVerified)
+          if(!$userVerified){
             accessDenied();
+          }
       } 
     
       function checkPassword($userpassword, $filedata)
       {
-          if ($userpassword == $filedata[1])
+          if ($userpassword == $filedata[1]){
            return true;
-          else  
+          }
+          else{  
            return false;
+          }
       }
 
       function userAdded($name)
