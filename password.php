@@ -1,5 +1,5 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitionnal//EN"
-"http://www.w3.org/TR/xhtml11/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 <html xmlns = "http://www.w3.org/1999/xhtml">
 <head>
@@ -10,8 +10,8 @@
     
        extract ($_POST);
 
-       if (!$USERNAME || $PASSWORD){
-           fireldsBlank();
+       if (!$USERNAME || !$PASSWORD){
+           fieldsBlank();
            die();
        }
 
@@ -32,7 +32,7 @@
           }
           $userVerified = 0;
 
-          while(!feof($file && !$userVerified){
+          while(!feof($file) && !$userVerified){
               $line = fgets($file, 255);
               $line = chop($line);
               $feild = split(",",$line,2);
@@ -49,7 +49,7 @@
 
           fclose($file);
 
-          if(!$userVerfied)
+          if(!$userVerified)
             accessDenied();
       } 
     
