@@ -5,58 +5,7 @@
 <head>
     <?php
     
-     function checkPassword($userpassword, $filedata)
-      {
-          if ($userpassword == $filedata[1])
-           return true;
-          else  
-           return false;
-      }
-
-      function userAdded($name)
-      {
-          echo("<title>Thank You</title></head>
-          <body style = \"font-family:arial;font-size: 1em; color: blue\">
-          <strong>You have been added to the user list, $name.<br />Enjoy the site. </strong>");
-      }
-      
-      function accessGranted($name)
-      {
-        echo("<title>Thank You</title></head>
-        <body style = \"font-family:arial;
-        font-size: 1em; color: blue\">
-        <strong>Permission has been granted, $name.
-        <br />Enjoy the site. </strong>");
-      }
-
-      function wrongPassword()
-      {
-          print("<title>Access Denied</title></head>
-          <body style = \"font-family: arial;
-          font-size: 1em; color: red\">
-          <strong>You entered an invalid password.
-          <br />Access has been denied.</strong>");
-         }
-
-         function accessDenied()
-         {
-             print("<title>Access Denied</title></head>
-             <body style = \"font-family: arial;
-             font-size: 1em; color: red\">
-             <strong>
-             You were denied access to this server.
-             <br /></strong>");
-            }
-
-            function fieldsBlank()
-            {
-                print("<title>Access Denied</title></head>
-                <body style = \"font-family: arial;
-                font-size: 1em; color: red\">
-                <strong>
-                Please fill in all form fields.
-                <br /></strong>");
-               }
+   
          
     
      
@@ -106,7 +55,58 @@
             accessDenied();
       } 
     
-    
+      function checkPassword($userpassword, $filedata)
+      {
+          if ($userpassword == $filedata[1])
+           return true;
+          else  
+           return false;
+      }
+
+      function userAdded($name)
+      {
+          print("<title>Thank You</title></head>
+          <body style = \"font-family:arial;font-size: 1em; color: blue\">
+          <strong>You have been added to the user list, $name.<br />Enjoy the site. </strong>");
+      }
+      
+      function accessGranted($name)
+      {
+        print("<title>Thank You</title></head>
+        <body style = \"font-family:arial;
+        font-size: 1em; color: blue\">
+        <strong>Permission has been granted, $name.
+        <br />Enjoy the site. </strong>");
+      }
+
+      function wrongPassword()
+      {
+          print("<title>Access Denied</title></head>
+          <body style = \"font-family: arial;
+          font-size: 1em; color: red\">
+          <strong>You entered an invalid password.
+          <br />Access has been denied.</strong>");
+         }
+
+         function accessDenied()
+         {
+             print("<title>Access Denied</title></head>
+             <body style = \"font-family: arial;
+             font-size: 1em; color: red\">
+             <strong>
+             You were denied access to this server.
+             <br /></strong>");
+            }
+
+            function fieldsBlank()
+            {
+                print("<title>Access Denied</title></head>
+                <body style = \"font-family: arial;
+                font-size: 1em; color: red\">
+                <strong>
+                Please fill in all form fields.
+                <br /></strong>");
+               }
 
     
 
