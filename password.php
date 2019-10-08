@@ -2,11 +2,59 @@
 "http://www.w3.org/TR/xhtml11/DTD/xhtml1-transitional.dtd">
 
 <html xmlns = "http://www.w3.org/1999/xhtml">
-
+<head>
     <?php
          
     
-      function checkPassword($userpassword, $filedata)
+     
+    
+       extract ($_POST);
+
+       if (!$USERNAME || $PASSWORD){
+           fireldsBlank();
+           die();
+       }
+
+       if (isset($NewUser)){
+
+         if(!($file = fopen("password.txt","a"))){
+             echo("<title>Error</title></head><body>
+             Could not open password file</body>");
+             die();
+         }
+       fputs( $file, "$USERNAME,$PASSWORD\n");
+       userAdded($USERNAME);
+        }
+      else{
+          if(!($file = fopen("password.txt","r"))){
+              echo("<title>Error</title></head><body>Could not open password file</body>");
+              die();
+          }
+          $userVerified = 0;
+
+          while(!feof($file)&& !userVerified){
+              $line = fgets($file, 255);
+              $line = chop($line);
+              $feild = split(",",$line,2);
+
+              if($USERNAME == $field[0]){
+                  $userVerified = 1;
+
+                  if(checkPassword($PASSWORD, $field) == true)
+                  accessGranted($USERNAME);
+                  else
+                    worngPassword();
+              }
+          }
+
+          fclose($file);
+
+          if(!$userVerfied)
+            acessDenied();
+      } 
+    
+    
+ function checkPassword($userpassword, $filedata)
       {
           if ($userpassword == $filedata[1])
            return true;
@@ -58,52 +106,6 @@
                 Please fill in all form fields.
                 <br /></strong>");
                }
-    
-       extract ($_POST);
-
-       if (!$USERNAME || $PASSWORD){
-           fireldsBlank();
-           die();
-       }
-
-       if (isset($NewUser)){
-
-         if(!($file = fopen("password.txt","a"))){
-             echo("<title>Error</title></head><body>
-             Could not open password file</body>");
-             die();
-         }
-       fputs( $file, "$USERNAME,$PASSWORD\n");
-       userAdded($USERNAME);
-        }
-      else{
-          if(!($file = fopen("password.txt","r"))){
-              echo("<title>Error</title></head><body>Could not open password file</body>");
-              die();
-          }
-          $userVerified = 0;
-
-          while(!feof($file)&& !userVerified){
-              $line = fgets($file, 255);
-              $line = chop($line);
-              $feild = split(",",$line,2);
-
-              if($USERNAME == $field[0]){
-                  $userVerified = 1;
-
-                  if(checkPassword($PASSWORD, $field) == true)
-                  accessGranted($USERNAME);
-                  else
-                    worngPassword();
-              }
-          }
-
-          fclose($file);
-
-          if(!$userVerfied)
-            acessDenied();
-      } 
-
     
 
 
