@@ -37,7 +37,7 @@
           while(!feof($file) && !$userVerified){
               $line = fgets($file, 255);
               $line = chop($line);
-              $feild = explode(",",$line,2);
+              $feild = explode(",",$line);
 
               if($USERNAME == $field[0]){
                   $userVerified = 1;
