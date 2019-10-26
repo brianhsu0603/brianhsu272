@@ -6,7 +6,7 @@
 extract($_POST);
 
 $query = "SELECT".$select."FROM users";
-if(!($database_connection = mysqli_connect("localhost","httpd","")))
+if(!($database_connection = mysqli_connect("localhost","root","asdzxc0603","smarthome")))
 die("couldn't connect to database");
 
 if(!mysql_select_db("smarthome",$database))
