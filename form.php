@@ -1,4 +1,4 @@
-<form action="form.php">
+<form method = "post" action="database.php">
   <div class="container">
     <h1>Register</h1>
     <p>Please fill in this form to create an user.</p>
