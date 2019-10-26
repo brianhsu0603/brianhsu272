@@ -27,7 +27,8 @@ if (!($result = mysqli_query($database_connection,$query))){
     die(mysql_error());
 
 }
-
+ echo $query;
+echo mysqli_num_rows($result)." result(s)";
 ?>
 
 <h3 style = "color: blue">
