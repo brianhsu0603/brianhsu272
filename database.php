@@ -38,7 +38,7 @@ Search Results</h3>
   style = "background-color:#ADD8E6">
 
 <?php
-
+echo "<tr><td>First Name</td><td>Last Name</td><td>Email</td><td>Home adress</td><td>Home Phone</td><td>Cell Phone</td></tr>";
  for($counter = 0;
     $row = mysqli_fetch_row($result);
     $counter++){
