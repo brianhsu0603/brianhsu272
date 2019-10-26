@@ -14,7 +14,7 @@
      <strong>
        <?php print("$first_name");?>
 </strong>
-Thank you for registerin.<br />
+Thank you for registering.<br />
 you have been added to the
 <strong>
   <?php print("$users");?>
@@ -42,5 +42,6 @@ you have been added to the
    ?>
    </tr>
 </table>
+   <a href="form.html">Back</a>
 </body>
 </html>
