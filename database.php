@@ -27,8 +27,8 @@ if (!($result = mysqli_query($database_connection,$query))){
     die(mysql_error());
 
 }
- echo $query;
-echo mysqli_num_rows($result)." result(s)";
+
+echo mysqli_num_rows($result)." result(s) <br>";
 ?>
 
 <h3 style = "color: blue">
@@ -40,7 +40,7 @@ Search Results</h3>
 <?php
 
  for($counter = 0;
-    $row = mysql_fetch_row($result);
+    $row = mysqli_fetch_row($result);
     $counter++){
         print("<tr>");
 
