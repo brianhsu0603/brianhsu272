@@ -6,11 +6,19 @@
 extract($_POST);
  
 
-
-$query = "SELECT".$select."FROM email";
+$query = "SELECT * from users as u where 
+u.first_name like '%$searchText' or 
+u.last_name like '%$searchText' or
+u.email like '%$searchText' or 
+u.home_address like '%$searchText' or 
+u.home_phone like '%$searchText' or 
+u.cell_phone like '%$searchText'";
+ 
 if(!($database_connection = mysqli_connect("localhost","root","asdzxc0603","smarthome")))
 die("couldn't connect to database");
 
+ 
+ 
 if(!mysql_select_db("smarthome",$database))
  die("could not open smarthome database");
 
