@@ -4,6 +4,7 @@
 <?php
 
 extract($_POST);
+echo $searchText;
  
 
 $query = "SELECT * from users as u where 
