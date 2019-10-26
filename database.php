@@ -20,10 +20,9 @@ die("couldn't connect to database");
 
  
  
-if(!mysql_select_db("smarthome",$database))
- die("could not open smarthome database");
 
-if (!($result = mysql_query($query, $database))){
+
+if (!($result = mysqli_query($database_connection,$query))){
     print("Could not execute query!<br />");
     die(mysql_error());
 
