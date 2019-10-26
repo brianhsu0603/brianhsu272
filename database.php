@@ -7,7 +7,7 @@ extract($_POST);
  
 
 
-$query = "SELECT".$select."FROM users";
+$query = "SELECT".$select."FROM email";
 if(!($database_connection = mysqli_connect("localhost","root","asdzxc0603","smarthome")))
 die("couldn't connect to database");
 
