@@ -10,9 +10,9 @@
    extract($_POST);
 
 $servername = "localhost";
-$username = "username";
-$password = "password";
-$dbname = "myDB";
+$username = "root";
+$password = "asdzxc0603";
+$dbname = "smarthome";
 
 // Create connection
 $conn = mysqli_connect($servername, $username, $password, $dbname);
