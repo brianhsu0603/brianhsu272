@@ -22,6 +22,23 @@
 <a href="p8.html">8.table tennis robot</a><br>
 <a href="p9.html">9.swim robot</a><br>
 <a href="p10.html">10.baseball robot</a><br>
+  
+  <?php
+
+   session_start();
+   if(empty($_SESSION['track']))
+       $_SESSION['history'] = array($_SERVER['PHP_SELF']);
+   else {
+       $_SESSION['track'][] = $_SERVER['PHP_SELF'];
+   if(count($_SESSION['track']) > 5)
+       array_shift($_SESSION['track']);
+   }
+
+   function display()
+   {
+       print_r(array_values($_SESSION['track']));
+   }
+  ?>
 
 
 
