@@ -1,3 +1,7 @@
+$url = unserialize($_COOKIE['history']);
+array_push($url,http://54.193.64.46/p9.html);
+setcookie('history', serialize($url));
+
 <!DOCTYPE html>
 <html>
     <body>
