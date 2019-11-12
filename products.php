@@ -23,24 +23,7 @@
 <a href="p9.html">9.swim robot</a><br>
 <a href="p10.html">10.baseball robot</a><br>
  
-<?php 
 
- 
-
-   if (count($_COOKIE['pagehistory']) > 5) {
-  array_shift($_COOKIE['pagehistory']);
-  if (isset($_COOKIE['pagehistory']) && count($_COOKIE['pagehistory']) > 5) {
-  array_shift($_COOKIE['pagehistory']);
-  
-  foreach ($_COOKIE as $key=>$value) {
-  echo '<li><a href="$value" class="link">'.$value.'</a><li>';
-  }
- 
-  
-  
-
-
-?>
 
 
   
