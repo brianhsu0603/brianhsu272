@@ -23,15 +23,9 @@
 <a href="p9.html">9.swim robot</a><br>
 <a href="p10.html">10.baseball robot</a><br>
  
-<?php function curPageURL() {
-  $pageURL = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off' || $_SERVER['SERVER_PORT'] == 443) ? 'https://' : 'http://';
-  $pageURL .= ($_SERVER['SERVER_PORT'] != "80") ? $_SERVER['SERVER_NAME'].':'.$_SERVER['SERVER_PORT'].$_SERVER['REQUEST_URI'] : $_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'];
-  return $pageURL;
+<?php 
 }
-
-$currentPage = curPageURL();
-  // $_SESSION['pages'] = $currentPage;
-  $_COOKIE['pages'][] = $currentPage;
+  cookie_start();
   if (count($_COOKIE['pages']) > 10) {
   array_shift($_COOKIE['pages']);
   if (isset($_COOKIE['pagehistory']) && count($_COOKIE['pagehistory']) > 10) {
@@ -45,9 +39,6 @@ $currentPage = curPageURL();
   }
   }
 
-$_COOKIE['pagehistory'][] = (!empty($_SERVER['HTTP_REFERER'])) ? $_SERVER['HTTP_REFERER'] : '';
-
-// var_dump($_SESSION); // enable this to show the $_SESSION-arrays made above
 
 ?>
 
