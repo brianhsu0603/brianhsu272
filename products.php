@@ -24,7 +24,7 @@
 <a href="p10.html">10.baseball robot</a><br>
  
 <?php 
-}
+
   cookie_start();
   if (count($_COOKIE['pages']) > 10) {
   array_shift($_COOKIE['pages']);
