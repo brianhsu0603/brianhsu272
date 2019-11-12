@@ -27,7 +27,7 @@
 
  
 
-  echo <h2>Page History</h2>
+ 
   
   foreach ($_COOKIE as $key=>$value) {
   echo '<li><a href="'.$value.'" class="link">'.$value.'</a><li>';
