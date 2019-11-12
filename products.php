@@ -27,10 +27,13 @@
 
  
 
- 
+   if (count($_COOKIE['pagehistory']) > 5) {
+  array_shift($_COOKIE['pagehistory']);
+  if (isset($_COOKIE['pagehistory']) && count($_COOKIE['pagehistory']) > 5) {
+  array_shift($_COOKIE['pagehistory']);
   
   foreach ($_COOKIE as $key=>$value) {
-  echo '<li><a href="'.$value.'" class="link">'.$value.'</a><li>';
+  echo '<li><a href="$value" class="link">'.$value.'</a><li>';
   }
  
   
