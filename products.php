@@ -23,34 +23,21 @@
 <a href="p9.html">9.swim robot</a><br>
 <a href="p10.html">10.baseball robot</a><br>
  
-<?php function curPageURL() {
-  $pageURL = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off' || $_SERVER['SERVER_PORT'] == 443) ? 'https://' : 'http://';
-  $pageURL .= ($_SERVER['SERVER_PORT'] != "80") ? $_SERVER['SERVER_NAME'].':'.$_SERVER['SERVER_PORT'].$_SERVER['REQUEST_URI'] : $_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'];
-  return $pageURL;
-}
+<?php
+session_start();
+   if(empty($_SESSION['track']))
+       $_SESSION['history'] = array($_SERVER['PHP_SELF']);
+   else {
+       $_SESSION['track'][] = $_SERVER['PHP_SELF'];
+   if(count($_SESSION['track']) > 5)
+       array_shift($_SESSION['track']);
+   }
 
-$currentPage = curPageURL();
-  // $_SESSION['pages'] = $currentPage;
-  $_SESSION['pages'][] = $currentPage;
-  if (count($_SESSION['pages']) > 10) {
-  array_shift($_SESSION['pages']);
-  if (isset($_SESSION['pagehistory']) && count($_SESSION['pagehistory']) > 10) {
-  array_shift($_SESSION['pagehistory']);
-  echo '<h2>Page History</h2>
-  <ul>';
-  foreach ($_SESSION['pagehistory'] as $page) {
-  echo '<li><a href="'.$page.'" class="link">'.$page.'</a><li>';
-  }
-  echo '</ul>';
-  }
-  }
-
-$_SESSION['pagehistory'][] = (!empty($_SERVER['HTTP_REFERER'])) ? $_SERVER['HTTP_REFERER'] : '';
-
-// var_dump($_SESSION); // enable this to show the $_SESSION-arrays made above
-
-?>
-
+   function display()
+   {
+       print_r(array_values($_SESSION['track']));
+   }
+  ?>
 
 
   
