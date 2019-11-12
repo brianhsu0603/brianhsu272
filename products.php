@@ -31,21 +31,21 @@
 
 $currentPage = curPageURL();
   // $_SESSION['pages'] = $currentPage;
-  $_SESSION['pages'][] = $currentPage;
-  if (count($_SESSION['pages']) > 10) {
-  array_shift($_SESSION['pages']);
-  if (isset($_SESSION['pagehistory']) && count($_SESSION['pagehistory']) > 10) {
-  array_shift($_SESSION['pagehistory']);
+  $_COOKIE['pages'][] = $currentPage;
+  if (count($_COOKIE['pages']) > 10) {
+  array_shift($_COOKIE['pages']);
+  if (isset($_COOKIE['pagehistory']) && count($_COOKIE['pagehistory']) > 10) {
+  array_shift($_COOKIE['pagehistory']);
   echo '<h2>Page History</h2>
   <ul>';
-  foreach ($_SESSION['pagehistory'] as $page) {
+  foreach ($_COOKIE['pagehistory'] as $page) {
   echo '<li><a href="'.$page.'" class="link">'.$page.'</a><li>';
   }
   echo '</ul>';
   }
   }
 
-$_SESSION['pagehistory'][] = (!empty($_SERVER['HTTP_REFERER'])) ? $_SERVER['HTTP_REFERER'] : '';
+$_COOKIE['pagehistory'][] = (!empty($_SERVER['HTTP_REFERER'])) ? $_SERVER['HTTP_REFERER'] : '';
 
 // var_dump($_SESSION); // enable this to show the $_SESSION-arrays made above
 
