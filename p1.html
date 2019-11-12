@@ -1,7 +1,7 @@
 <?php
-$url = unserialize($_COOKIE['history']);
+$url = unserialize($_COOKIE['pagehistory']);
 array_push($url,"p1.html");
-setcookie('history', serialize($url));
+setcookie('pagehistory', serialize($url),time()+86400);
 ?>
 
 <!DOCTYPE html>
