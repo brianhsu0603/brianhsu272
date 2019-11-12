@@ -25,10 +25,10 @@
  
 <?php 
 
-  cookie_start();
-  if (count($_COOKIE['pages']) > 10) {
-  array_shift($_COOKIE['pages']);
-  if (isset($_COOKIE['pagehistory']) && count($_COOKIE['pagehistory']) > 10) {
+ 
+  if (count($_COOKIE['pagehistory']) > 5) {
+  array_shift($_COOKIE['pagehistory']);
+  if (isset($_COOKIE['pagehistory']) && count($_COOKIE['pagehistory']) > 5) {
   array_shift($_COOKIE['pagehistory']);
   echo '<h2>Page History</h2>
   <ul>';
