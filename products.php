@@ -26,18 +26,15 @@
 <?php 
 
  
-  if (count($_COOKIE['pagehistory']) > 5) {
-  array_shift($_COOKIE['pagehistory']);
-  if (isset($_COOKIE['pagehistory']) && count($_COOKIE['pagehistory']) > 5) {
-  array_shift($_COOKIE['pagehistory']);
-  echo '<h2>Page History</h2>
-  <ul>';
-  foreach ($_COOKIE['pagehistory'] as $page) {
-  echo '<li><a href="'.$page.'" class="link">'.$page.'</a><li>';
+
+  echo <h2>Page History</h2>
+  
+  foreach ($_COOKIE as $key=>$value) {
+  echo '<li><a href="'.$value.'" class="link">'.$value.'</a><li>';
   }
-  echo '</ul>';
-  }
-  }
+ 
+  
+  
 
 
 ?>
