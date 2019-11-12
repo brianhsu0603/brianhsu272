@@ -1,6 +1,7 @@
 <?php
-
-setcookie(“House Keeper Robot","1.House Keeper Robot","/",time()+86400);
+$url = unserialize($_COOKIE['pagehistory']);
+array_push($url,"p1.html");
+setcookie('pagehistory', serialize($url));
 ?>
 
 <!DOCTYPE html>
