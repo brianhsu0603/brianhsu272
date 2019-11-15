@@ -1,7 +1,5 @@
 <?php
-$url = unserialize($_COOKIE['pagehistory']);
-array_push($url,"p2.html");
-setcookie('pagehistory', serialize($url));
+setcookie("pagehistory",'Security Robot', time()+ 86400);
 ?>
 
 <!DOCTYPE html>
