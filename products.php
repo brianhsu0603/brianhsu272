@@ -26,15 +26,17 @@
 <h1>Last 5 visited products</h1>
 <table>
 <?php
-  foreach($_COOKIE as $key => $value)
-    print("<tr>
-    <td>$value</td></tr>")
+  $count = 0;
+  foreach($_COOKIE as $key => $value){
+  if ($count<5){
+  print("<tr>
+    <td>$value</td></tr>");
+    $count++;
+  }
+}
 
-  /*for ($i = 1; $i <= 10; $i++){
-    $cookieName = "p{$i}";
-    echo "<td><tr>$_COOKIE[$cookieName]</tr></td><br>";
 
-  }*/
+  
  ?>
   </table>
   
