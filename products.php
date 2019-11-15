@@ -22,6 +22,15 @@
 <a href="p8.html">8.table tennis robot</a><br>
 <a href="p9.html">9.swim robot</a><br>
 <a href="p10.html">10.baseball robot</a><br>
+  
+<h1>Last 5 visited products</h1>
+<table>
+<?php
+  foreach($_COOKIE as $key => $value)
+    print("<tr><td>$value</td><tr>");
+ ?>
+  </table>
+  
  
 
 
