@@ -1,0 +1,17 @@
+<?php
+$productNum = 3;
+include 'cookies.php';
+?>
+
+
+<!DOCTYPE html>
+<html>
+    <body>
+<h1>3.Voice Assistant:</h1><br>
+<p1>Do everything on your instructions.</p1><br>
+<img src="voice assistant.jpg"><br>
+<a href="products.php">Products</a>
+   
+    
+    </body>
+    </html>

@@ -1,0 +1,16 @@
+<?php
+$productNum = 6;
+include 'cookies.php';
+?>
+
+<!DOCTYPE html>
+<html>
+    <body>
+<h1>6.tennis Robot:</h1><br>
+<p1>robot that play tennis.</p1><br>
+<img src="tennis.jpg"><br>
+<a href="products.php">Products</a>
+   
+    
+    </body>
+    </html>
