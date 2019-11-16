@@ -33,8 +33,8 @@
     <td>$value</td></tr>");
     $count++;
   }
-      else if ($count>5){
-    $_COOKIE[$key]+=1;
+ else if ($count>5){
+    array_shift($_COOKIE);
     print("<tr>
     <td>$value</td></tr>");
     $count++;
