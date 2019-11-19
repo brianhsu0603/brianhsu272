@@ -2,6 +2,7 @@
 <!DOCTYPE html>
 <html>
 <body>
+
 <?php
 $query = "SELECT * from users";
  
@@ -36,6 +37,7 @@ echo "<tr><td>First Name</td><td>Last Name</td><td>Email</td><td>Home adress</td
 mysql_close($database);
 ?>
 </table>
+
 
 <?php
 $ch = curl_init();
