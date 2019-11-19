@@ -44,6 +44,8 @@ topnav a.active {
   <a href="products.php">Products</a>
   <a href="about.php">About</a>
   <a href="form.html">Register</a>
+  <a href="users.php">Users</a>
+  <a href="allusers.php">All Users</a>
 </div>
 
 <p>Let Us Help you live a better life!</p>
