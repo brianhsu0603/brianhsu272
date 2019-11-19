@@ -43,7 +43,7 @@ topnav a.active {
   <a href="contacts.php">Contacts</a>
   <a href="products.php">Products</a>
   <a href="about.php">About</a>
-  <a href="form.html">Users</a>
+  <a href="form.html">Register</a>
 </div>
 
 <p>Let Us Help you live a better life!</p>
