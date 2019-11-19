@@ -10,7 +10,7 @@ $ch = curl_init();
 
 
 
-curl_setopt($ch, CURLOPT_URL,"http://webdesignfun.com/allusers.php");
+curl_setopt($ch, CURLOPT_URL,'http://webdesignfun.com/allusers.php');
 
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 
