@@ -37,6 +37,7 @@ mysql_close($database);
 ?>
 </table>
 
+<?php
 $ch = curl_init();
 
 
