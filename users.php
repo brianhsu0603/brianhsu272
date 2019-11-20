@@ -13,7 +13,7 @@ if (!($result = mysqli_query($database_connection,$query))){
     print("Could not execute query!<br />");
     die(mysql_error());
 }
-echo mysqli_num_rows($result)." result(s) <br>";
+
 ?>
 
 <h3 style = "color: blue">
