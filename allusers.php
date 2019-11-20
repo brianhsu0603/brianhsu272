@@ -3,62 +3,30 @@
 <body>
 
 <?php
-$query = "SELECT * from users";
- 
-if(!($database_connection = mysqli_connect("localhost","root","asdzxc0603","smarthome")))
-die("couldn't connect to database");
- 
- 
-if (!($result = mysqli_query($database_connection,$query))){
-    print("Could not execute query!<br />");
-    die(mysql_error());
-}
-
+//include 'users.php';
+$ch1 = curl_init();
+curl_setopt($ch1,CURLOPT_URL, "54.193.64.46/users.php");
+curl_setopt($ch1,CURLOPT_RETURNTRANSFER, 1);
+$results1 = curl_exec($ch1);
+curl_close($ch1);
+echo $results1;
+echo "<br>";
 ?>
-
-<h3 style = "color: blue">
-User List</h3>
-
-<table border = "1" cellpadding = "3" cellspacing = "2"
-  style = "background-color:#ADD8E6">
-
-<?php
-echo "<tr><td>First Name</td><td>Last Name</td><td>Email</td><td>Home adress</td><td>Home Phone</td><td>Cell Phone</td></tr>";
- for($counter = 0;
-    $row = mysqli_fetch_row($result);
-    $counter++){
-        print("<tr>");
-        foreach($row as $key => $value)
-          print ("<td>$value</td>");
-        
-        print("</tr>");
-    }
-mysql_close($database);
-?>
-</table>
-
-
-
 
 <?php
 $ch = curl_init();
-
-
 
 curl_setopt($ch, CURLOPT_URL,"http://webdesignfun.com/allusers.php");
 
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 
-
 $contents = curl_exec ($ch);
 
 echo $contents;
 
-
 curl_close ($ch);
 
 ?>
-
 
 </body>
 </html>
