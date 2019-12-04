@@ -4,30 +4,33 @@
 <head>
 <style>
 
-h1 {color: blue;}
-
-topnav {
-  background-color: #333;
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
   overflow: hidden;
+  background-color: #333;
 }
 
-topnav a {
+li {
   float: left;
-  color: #f2f2f2;
+}
+
+li a {
+  display: block;
+  color: white;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px;
 }
 
-topnav a:hover {
-  background-color: #ddd;
-  color: black;
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
 }
 
-topnav a.active {
+.active {
   background-color: #4CAF50;
-  color: white;
 }
 
 </style>
@@ -36,17 +39,18 @@ topnav a.active {
 
 <h1>SmartHome</h1>
 
-<div class="topnav">
-  <a class="active" href="index.php">Home</a>
-  <a href="password.html">Login</a>
-  <a href="news.php">News</a>
-  <a href="contacts.php">Contacts</a>
-  <a href="products.php">Products</a>
-  <a href="about.php">About</a>
-  <a href="form.html">Register</a>
-  <a href="users.php">Users</a>
-  <a href="allusers.php">All Users</a>
-</div>
+<ul>
+  <li><a class="active" href="index.php">Home</a></li>
+  <li><a href="password.html">Login</a></li>
+  <li><a href="news.php">News</a></li>
+  <li><a href="contacts.php">Contacts</a></li>
+  <li><a href="products.php">Products</a></li>
+  <li><a href="about.php">About</a></li>
+  <li><a href="form.html">Register</a></li>
+  <li><a href="users.php">Users</a></li>
+  <li><a href="allusers.php">All Users</a></li>
+</ul>
+
 
 <p>Let Us Help you live a better life!</p>
 
@@ -64,4 +68,3 @@ topnav a.active {
 ?>
 </body>
 </html>
-
