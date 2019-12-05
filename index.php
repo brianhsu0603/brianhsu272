@@ -52,7 +52,6 @@ li a:hover {
 </ul>
 
 
-<p>Let Us Help you live a better life!</p>
 
 
 
@@ -64,7 +63,7 @@ li a:hover {
 
 
 
-<?php
-?>
+
+
 </body>
 </html>
