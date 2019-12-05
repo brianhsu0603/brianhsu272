@@ -6,6 +6,9 @@ include 'cookies.php';
 <!DOCTYPE html>
 <html>
     <body>
+           <?php
+        include 'index.php';
+        ?>
 <h1>6.tennis Robot:</h1><br>
 <p1>robot that play tennis.</p1><br>
 <img src="tennis.jpg"><br>
