@@ -5,7 +5,10 @@ include 'cookies.php';
 
 <!DOCTYPE html>
 <html>
-    <body>
+  <body>
+         <?php
+        include 'index.php';
+        ?>
 <h1>1.House Keeper Robot:</h1><br>
 <p1>Help you do the chores including washing the dishes and taking out the trash etc.</p1><br>
 <img src="e72daebbd6add49be4f47b36d24c757c_600x.jpg"><br>
