@@ -7,6 +7,9 @@ include 'cookies.php';
 <!DOCTYPE html>
 <html>
     <body>
+           <?php
+        include 'index.php';
+        ?>
 <h1>3.Voice Assistant:</h1><br>
 <p1>Do everything on your instructions.</p1><br>
 <img src="voice assistant.jpg"><br>
