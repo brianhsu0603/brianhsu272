@@ -6,6 +6,9 @@ include 'cookies.php';
 <!DOCTYPE html>
 <html>
     <body>
+   <?php
+        include 'index.php';
+        ?>
 <h1>2.Security Robot:</h1><br>
 <p1>Help you secure your house.</p1><br>
 <img src="security robot.jpg"><br>
