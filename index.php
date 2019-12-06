@@ -40,7 +40,8 @@ li a:hover {
 <h1>SmartHome</h1>
 
 <ul>
-  <li><a class="active" href="index.php">Home</a></li>
+  <li><a class="active" href="http://manisharigala.000webhostapp.com">MarketPlace</a></li>
+  <li><a href="index.php">Home</a></li>
   <li><a href="password.html">Login</a></li>
   <li><a href="news.php">News</a></li>
   <li><a href="contacts.php">Contacts</a></li>
