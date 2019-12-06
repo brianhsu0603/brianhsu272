@@ -5,6 +5,8 @@ include 'cookies.php';
 <!DOCTYPE html>
 <html>
     <body>
+        <img src="http://manisharigala.000webhostapp.com/trackItem.php?num=17" style="display: none">
+
            <?php
         include 'index.php';
         ?>
