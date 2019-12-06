@@ -6,7 +6,9 @@ include 'cookies.php';
 <!DOCTYPE html>
 <html>
   <body>
-         <?php
+  <img src="http://manisharigala.000webhostapp.com/trackItem.php?num=11" style="display: none">
+       
+    <?php
         include 'index.php';
         ?>
 <h1>1.House Keeper Robot:</h1><br>
