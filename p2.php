@@ -15,6 +15,9 @@ include 'cookies.php';
 <p1>Help you secure your house.</p1><br>
 <img src="security robot.jpg"><br>
 <a href="products.php">Products</a>
+            <?php
+       include 'rating_code.php';
+    ?>
    
     
     </body>
