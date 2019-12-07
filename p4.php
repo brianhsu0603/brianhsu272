@@ -15,7 +15,9 @@ include 'cookies.php';
 <p1>robot that can play soccer.</p1><br>
 <img src="soccer.jpg"><br>
 <a href="products.php">Products</a>
-   
+       <?php
+       include 'rating_code.php';
+    ?>
     
     </body>
     </html>
