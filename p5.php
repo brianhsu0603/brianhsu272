@@ -16,6 +16,9 @@ include 'cookies.php';
 <p1>Robot that play basketball.</p1><br>
 <img src="basketball.jpg"><br>
 <a href="products.php">Products</a>
+            <?php
+       include 'rating_code.php';
+    ?>
    
     
     </body>
