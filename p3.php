@@ -16,7 +16,9 @@ include 'cookies.php';
 <p1>Do everything on your instructions.</p1><br>
 <img src="voice assistant.jpg"><br>
 <a href="products.php">Products</a>
-   
+       <?php
+       include 'rating_code.php';
+    ?>
     
     </body>
     </html>
