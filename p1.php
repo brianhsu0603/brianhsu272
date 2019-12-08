@@ -12,7 +12,7 @@ include 'cookies.php';
        
     <?php
         include 'index.php';
-    include 'fetch_rating.php';
+    include 'fetchRating.php';
     
         ?>
 <h1>1.House Keeper Robot:</h1><br>
