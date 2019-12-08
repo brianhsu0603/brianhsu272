@@ -52,7 +52,7 @@
         $.post("http://manisharigala.000webhostapp.com/add_feedback.php", 
           {token : "<?php echo ($_COOKIE['userToken']);?>",  
           review: reviewT, rating: crating, 
-          prod_id : "<?php echo ($prodNumber + 10);?>"}, 
+          prod_id : "<?php echo ($productNum + 10);?>"}, 
           function(result){
             $("#rtemp").html(result);
         });
