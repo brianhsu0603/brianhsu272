@@ -22,6 +22,7 @@ include 'cookies.php';
     
     <?php
        include 'fetchReviews.php';
+       include 'purchase.php';
     ?>
         
 
