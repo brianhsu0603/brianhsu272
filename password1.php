@@ -9,9 +9,7 @@
 
     <title>Veryfying a username and a password.</title>
 
-     <style type = "text/css">
-        td { background-color:  #DDDDDD}
-    </style> 
+ 
     </head> 
    <body>
    <?php
