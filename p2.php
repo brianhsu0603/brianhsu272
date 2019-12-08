@@ -23,7 +23,16 @@ include 'cookies.php';
 <h1>2.Security Robot:</h1><br>
 <p1>Help you secure your house.</p1><br>
 <img src="security robot.jpg"><br>
-<a href="products.php">Products</a>
+
+<a href="products.php">Back to Products</a></br>
+ <button id="cart_button">Add to cart</button>
+    <?php
+    include 'purchase.php';
+   
+    include 'fetchReviews.php';
+       
+    ?>
+        
   
    
     
