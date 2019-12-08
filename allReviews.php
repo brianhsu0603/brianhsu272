@@ -1,4 +1,4 @@
-R4EMEMBER TO INCLUDE STAR CSS IN STYLE IN HEAD
+
 
 <?php
 $pid = $_GET['pid'];
