@@ -11,6 +11,7 @@ include 'cookies.php';
     .checked{
       color:orange;
     }
+  </style>
   <body>
   <img src="http://manisharigala.000webhostapp.com/trackItem.php?num=11" style="display: none">
        
