@@ -5,11 +5,15 @@ include 'cookies.php';
 
 <!DOCTYPE html>
 <html>
+  <link rel="stylesheet" href="rating.css">
+  
   <body>
   <img src="http://manisharigala.000webhostapp.com/trackItem.php?num=11" style="display: none">
        
     <?php
         include 'index.php';
+    include 'fetch_rating.php';
+    
         ?>
 <h1>1.House Keeper Robot:</h1><br>
 <p1>Help you do the chores including washing the dishes and taking out the trash etc.</p1><br>
@@ -17,7 +21,7 @@ include 'cookies.php';
 <a href="products.php">Products</a>
     
     <?php
-       include 'rating_code.php';
+       include 'fetchReviews.php';
     ?>
         
 
