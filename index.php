@@ -42,12 +42,12 @@ li a:hover {
 <ul>
   <li><a class="active" href="http://manisharigala.000webhostapp.com">MarketPlace</a></li>
   <li><a href="index.php">Home</a></li>
-  <li><a href="password.html">Login</a></li>
+  <li><a href="password1.php">Login</a></li>
   <li><a href="news.php">News</a></li>
   <li><a href="contacts.php">Contacts</a></li>
   <li><a href="products.php">Products</a></li>
   <li><a href="about.php">About</a></li>
-  <li><a href="form.html">Register</a></li>
+  <li><a href="form1.php">Register</a></li>
   <li><a href="users.php">Users</a></li>
   <li><a href="allusers.php">All Users</a></li>
 </ul>
