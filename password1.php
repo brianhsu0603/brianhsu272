@@ -18,10 +18,10 @@
  
 
     <h1>Login</h1>
-    <body style = "font-family: arial">
+    <body>
      
  
-    <p style = "font-size: 13pt">
+    <p>
         Type in your username and password below.
         <br />
         
