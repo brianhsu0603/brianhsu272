@@ -10,6 +10,16 @@ include 'cookies.php';
     .checked{
       color:orange;
     }
+      .button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
   </style>
   <body>
   <img src="http://manisharigala.000webhostapp.com/trackItem.php?num=11" style="display: none">
