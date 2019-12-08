@@ -14,7 +14,7 @@ include('../header.php');
 
 <img src="http://manisharigala.000webhostapp.com/trackItem.php?num=<?php echo $productNum;?>" style="display: none">
 <!--<img src="/images/<?php echo $image; ?>" height=<?php echo $w; ?> width=<?php echo $h; ?>><br> -->
-<input type="button" value="Back" onclick="window.location.href='../products.php'" />
+<input type="button" value="Back" onclick="window.history.back()" />
 </form></div>
 
 <?php
