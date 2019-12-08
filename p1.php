@@ -23,7 +23,7 @@ include 'cookies.php';
 <h1>1.House Keeper Robot:</h1><br>
 <p1>Help you do the chores including washing the dishes and taking out the trash etc.</p1><br>
 <img src="e72daebbd6add49be4f47b36d24c757c_600x.jpg"><br>
-<a href="products.php">Products</a>
+<a href="products.php">Back to Products</a></br>
  <button id="cart_button">Add to cart</button>
     <?php
     include 'purchase.php';
