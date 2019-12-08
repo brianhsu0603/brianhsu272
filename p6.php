@@ -35,8 +35,7 @@ include 'cookies.php';
 <img src="tennis.jpg"><br>
 
 <a href="products.php">Back to Products</a></br>
- <button id="cart_button">Add to cart</button>
-    <?php
+ <button class="button" id="cart_button">Add to cart</button>    <?php
     include 'purchase.php';
    
     include 'fetchReviews.php';
