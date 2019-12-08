@@ -16,6 +16,8 @@ include 'cookies.php';
 <img src="baseball.jpg"><br>
 <a href="products.php">Products</a>
    
-    
+        <?php
+       include 'rating_code.php';
+    ?>
     </body>
     </html>
