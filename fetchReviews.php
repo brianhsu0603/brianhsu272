@@ -1,12 +1,9 @@
-REMEMBER TO INCLUDE STAR CSS IN STYLE IN HEAD
-
-
 <div>
 <?php
 $ch = curl_init();
 curl_setopt($ch,CURLOPT_URL,"http://manisharigala.000webhostapp.com/dbfetchReviews.php");
 curl_setopt($ch,CURLOPT_POST,1);
-curl_setopt($ch,CURLOPT_POSTFIELDS,http_build_query(["prod_id"=>$servNo,"limit"=>true]));
+curl_setopt($ch,CURLOPT_POSTFIELDS,http_build_query(["prod_id"=>$productNum,"limit"=>true]));
 curl_setopt($ch,CURLOPT_RETURNTRANSFER,1);
 $reviews = curl_exec($ch);
 curl_close($ch);
@@ -16,13 +13,13 @@ echo $reviews;
 $ch1 = curl_init();
 curl_setopt($ch1,CURLOPT_URL,"http://manisharigala.000webhostapp.com/dbfetchNumReviews.php");
 curl_setopt($ch1,CURLOPT_POST,1);
-curl_setopt($ch1,CURLOPT_POSTFIELDS,http_build_query(["prod_id"=>$servNo]));
+curl_setopt($ch1,CURLOPT_POSTFIELDS,http_build_query(["prod_id"=>$productNum]));
 curl_setopt($ch1,CURLOPT_RETURNTRANSFER,1);
 $numReviews = curl_exec($ch1);
 curl_close($ch1);
 
 if ($numReviews > 3){
-    echo "<div style=\"text-align:center\"><a href=\"allReviews.php?pid={$servNo}\">See More Reviews</a></div>";
+    echo "<div style=\"text-align:center\"><a href=\"allReviews.php?pid={$productNum}\">See More Reviews</a></div>";
 }
 ?>
 </div>
@@ -76,7 +73,7 @@ if ($numReviews > 3){
         $.post("http://manisharigala.000webhostapp.com/add_feedback.php", 
           {token : "<?php echo ($_COOKIE['userToken']);?>",  
           review: reviewT, rating: crating, 
-          prod_id : "<?php echo ($servNo);?>"}, 
+          prod_id : "<?php echo ($productNum);?>"}, 
           function(result){
             $("#rtemp").html(result);
         });
