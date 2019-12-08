@@ -27,7 +27,7 @@ include 'cookies.php';
   <img src="http://manisharigala.000webhostapp.com/trackItem.php?num=11" style="display: none">
        
     <?php
-        include 'index.php';
+        include 'nav.php';
     include 'fetchRating.php';
     
         ?>
