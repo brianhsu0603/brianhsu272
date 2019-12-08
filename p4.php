@@ -24,7 +24,7 @@ include 'cookies.php';
 }
   </style>
   <body>
-  <img src="http://manisharigala.000webhostapp.com/trackItem.php?num=11" style="display: none">
+  <img src="http://manisharigala.000webhostapp.com/trackItem.php?num=14" style="display: none">
        
     <?php
         include 'nav.php';
