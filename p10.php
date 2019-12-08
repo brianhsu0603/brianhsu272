@@ -23,10 +23,14 @@ include 'cookies.php';
 <h1>10.baseball Robot:</h1><br>
 <p1>robot that plays baseball.</p1><br>
 <img src="baseball.jpg"><br>
-<a href="products.php">Products</a>
+
+    <a href="products.php">Back to Products</a></br>
+ <button id="cart_button">Add to cart</button>
+    <?php
+    include 'purchase.php';
    
-        <?php
-       include 'rating_code.php';
+    include 'fetchReviews.php';
+       
     ?>
     </body>
     </html>
