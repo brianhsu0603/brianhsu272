@@ -10,7 +10,7 @@
 </head>
 <body>
    <?php
-        include 'index.php';
+        include 'nav.php';
         ?>
 <h1>News</h1>
 <pre>
