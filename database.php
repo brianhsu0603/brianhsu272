@@ -11,7 +11,7 @@
 </head>
 <body>
    <?php
-        include 'index.php';
+        include 'nav.php';
 ?>
   <?php
 extract($_POST);
