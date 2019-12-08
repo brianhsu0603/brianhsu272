@@ -4,7 +4,7 @@
 </head>
 <body>
    <?php
-        include 'index.php';
+        include 'nav.php';
         ?>
 <h1>Contacts</h1>
 <?php
