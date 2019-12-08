@@ -21,8 +21,9 @@ include 'cookies.php';
 <a href="products.php">Products</a>
     
     <?php
-       include 'fetchReviews.php';
-       include 'purchase.php';
+    include 'purchase.php';  
+    include 'fetchReviews.php';
+       
     ?>
         
 
