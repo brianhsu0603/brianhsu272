@@ -5,7 +5,7 @@
    
 <body>
 <?php
-include 'index.php';
+include 'nav.php';
 ?>
 
 <form method = "post" action="form.php">
