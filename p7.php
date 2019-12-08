@@ -34,8 +34,7 @@ include 'cookies.php';
 <p1>robot that play golf.</p1><br>
 <img src="golf.jpg"><br>
 <a href="products.php">Back to Products</a></br>
- <button id="cart_button">Add to cart</button>
-    <?php
+ <button class="button" id="cart_button">Add to cart</button>    <?php
     include 'purchase.php';
    
     include 'fetchReviews.php';
