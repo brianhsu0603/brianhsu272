@@ -12,9 +12,9 @@ include('../header.php');
 
 <?php include 'fetchRating.php'; ?>
 
-<img src="http://manisharigala.000webhostapp.com/trackItem.php?num=<?php echo $servNo;?>" style="display: none">
+<img src="http://manisharigala.000webhostapp.com/trackItem.php?num=<?php echo $productNum;?>" style="display: none">
 <!--<img src="/images/<?php echo $image; ?>" height=<?php echo $w; ?> width=<?php echo $h; ?>><br> -->
-<input type="button" value="Back" onclick="window.location.href='../services.php'" />
+<input type="button" value="Back" onclick="window.location.href='../products.php'" />
 </form></div>
 
 <?php
