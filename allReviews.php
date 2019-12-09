@@ -3,9 +3,9 @@
 <?php
 extract($_GET);
 $pid = $_GET['pid'];
+$productNum = $pid;
 $pageName= $pid;
 $pageTitle="Reviews for {$pid}";
-include('../header.php');
 ?>
 
 <!DOCTYPE html>
@@ -28,23 +28,24 @@ include('../header.php');
 }
   </style>
   <body>
-  <img src="" style="display: none">
-       
+    <?php include 'fetchRating.php'; ?>
+    <div align="center">     
     <?php 
         echo "<h1>$pname</h1><br>";
         echo "<img src=\"$pimage\"><br>";
     ?>
+    </div>
 
-    <?php
+    <!-- <?php
     include 'purchase.php';
     include 'fetchReviews.php';
-    ?>
+    ?> -->
 
 <div style="text-align: center;">
 <form>
 <h2>All reviews for <?php echo $pname; ?></h2>
 
-<?php include 'fetchRating.php'; ?>
+
 <input type="button" value="Back" onclick="window.history.back()" />
 </form></div>
 
