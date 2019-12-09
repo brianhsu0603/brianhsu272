@@ -1,5 +1,5 @@
 <?php
-$productNum = 6;
+$productNum = 16;
 include 'cookies.php';
 ?>
 

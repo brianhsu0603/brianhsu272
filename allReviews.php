@@ -1,19 +1,50 @@
 
 
 <?php
+extract($_GET);
 $pid = $_GET['pid'];
 $pageName= $pid;
 $pageTitle="Reviews for {$pid}";
 include('../header.php');
 ?>
 
-<div style="text-align: center;"><form>
-<h2>All reviews for PRODUCT NUMBER <?php echo $pid; ?></h2>
+<!DOCTYPE html>
+<html>
+  <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></head>
+  <link rel="stylesheet" href="rating.css">
+  <style>
+    .checked{
+      color:orange;
+    }
+    .button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+  </style>
+  <body>
+  <img src="" style="display: none">
+       
+    <?php 
+        echo "<h1>$pname</h1><br>";
+        echo "<img src=\"$pimage\"><br>";
+    ?>
+
+    <?php
+    include 'purchase.php';
+    include 'fetchReviews.php';
+    ?>
+
+<div style="text-align: center;">
+<form>
+<h2>All reviews for <?php echo $pname; ?></h2>
 
 <?php include 'fetchRating.php'; ?>
-
-<img src="http://manisharigala.000webhostapp.com/trackItem.php?num=<?php echo $productNum;?>" style="display: none">
-<!--<img src="/images/<?php echo $image; ?>" height=<?php echo $w; ?> width=<?php echo $h; ?>><br> -->
 <input type="button" value="Back" onclick="window.history.back()" />
 </form></div>
 
@@ -32,3 +63,5 @@ echo $reviews;
 <?php
 include('../footer.php');
 ?>
+</body>
+    </html>

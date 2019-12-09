@@ -19,7 +19,7 @@ $numReviews = curl_exec($ch1);
 curl_close($ch1);
 
 if ($numReviews > 3){
-    echo "<div style=\"text-align:center\"><a href=\"allReviews.php?pid={$productNum}\">See More Reviews</a></div>";
+    echo "<div style=\"text-align:center\"><a href=\"allReviews.php?pid={$productNum}&pname=$pname&pimage=$pimage\">See More Reviews</a></div>";
 }
 ?>
 </div>
