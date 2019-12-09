@@ -27,10 +27,13 @@ include 'cookies.php';
        
     <?php
         include 'nav.php';
-    include 'fetchRating.php';
+        $pname = "Security Robot";
+        $pimage = "security robot.jpg";
     
         ?>
+        <div align="center">
 <h1>2.Security Robot:</h1><br>
+<?php include 'fetchRating.php'; ?>
 <p1>Help you secure your house.</p1><br>
 <img src="security robot.jpg"><br>
 
@@ -44,7 +47,8 @@ include 'cookies.php';
     ?>
         
   
-   
+        </div>
     
     </body>
     </html>
+

@@ -25,12 +25,13 @@ include 'cookies.php';
   <img src="http://manisharigala.000webhostapp.com/trackItem.php?num=17" style="display: none">
        
     <?php
-        include 'nav.php';
-    include 'fetchRating.php';
-    
+     include 'nav.php';
+     $pname = "golf robot";
+     $pimage = "golf.jpg";
         ?>
-
+  <div align="center">
 <h1>7.golf Robot:</h1><br>
+<?php include 'fetchRating.php'; ?>
 <p1>robot that play golf.</p1><br>
 <img src="golf.jpg"><br>
 <a href="products.php">Back to Products</a></br>
@@ -40,6 +41,6 @@ include 'cookies.php';
     include 'fetchReviews.php';
        
     ?>
-    
+      </div>
     </body>
     </html>
