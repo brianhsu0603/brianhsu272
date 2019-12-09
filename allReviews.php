@@ -28,18 +28,14 @@ $pageTitle="Reviews for {$pid}";
 }
   </style>
   <body>
-    <?php include 'fetchRating.php'; ?>
+    
     <div align="center">     
     <?php 
         echo "<h1>$pname</h1><br>";
+        include 'fetchRating.php';
         echo "<img src=\"$pimage\"><br>";
     ?>
     </div>
-
-    <!-- <?php
-    include 'purchase.php';
-    include 'fetchReviews.php';
-    ?> -->
 
 <div style="text-align: center;">
 <form>
