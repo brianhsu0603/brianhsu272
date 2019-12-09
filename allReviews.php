@@ -8,7 +8,7 @@ include('../header.php');
 ?>
 
 <div style="text-align: center;"><form>
-<h2>All reviews for SERVICE NUMBER <?php echo $pid; ?></h2>
+<h2>All reviews for PRODUCT NUMBER <?php echo $pid; ?></h2>
 
 <?php include 'fetchRating.php'; ?>
 
