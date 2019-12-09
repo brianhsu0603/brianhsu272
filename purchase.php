@@ -6,7 +6,7 @@
   function addToCart() {
         $.post("http://manisharigala.000webhostapp.com/add_to_cart.php", 
           {token : "<?php echo ($_COOKIE['userToken']);?>",  
-          prod_id : "<?php echo ($productNum + 10);?>"}, 
+          prod_id : "<?php echo ($productNum);?>"}, 
           function(result){
             $("#rtemp").html(result);
         });
