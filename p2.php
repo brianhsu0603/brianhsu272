@@ -35,7 +35,8 @@ include 'cookies.php';
 <img src="security robot.jpg"><br>
 
 <a href="products.php">Back to Products</a></br>
- <button class="button" id="cart_button">Add to cart</button>    <?php
+ <button class="button" id="cart_button">Add to cart</button>    
+  <?php
     include 'purchase.php';
    
     include 'fetchReviews.php';
